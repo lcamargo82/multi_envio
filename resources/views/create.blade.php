@@ -19,9 +19,23 @@
                             <div class="form-group">
                                 <label for="inputAddress">Address</label>
                                 <input type="text" class="form-control" id="inputAddress" name="address">
+                                <input type="checkbox" id="multiArray">
                             </div>
-                            <button class="btn btn-success">Submit</button>
+
+                            <button class="btn btn-success" id="multiEnvio">Submit</button>
                         </form>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Endereco</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="multiTable">
+
+                            </tbody>
+                        </table>
 
                     </div>
                 </div>

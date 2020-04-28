@@ -37,10 +37,14 @@ class FormController extends Controller
      */
     public function store(Request $request)
     {
-        $form = new Form();
+        //dd($request->toArray());
+        foreach ($request->input('array') as $key => $value) {
+            //dd($value['address']);
+            $form = new Form();
 
-        $form->address = $request->input('address');
-        $form->save();
+            $form->address = $value['address'];
+            $form->save();
+        }
 
         return Response()->json("Sucesso");
     }
